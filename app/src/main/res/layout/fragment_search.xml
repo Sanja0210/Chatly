@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SearchFragment">
+
+
+    <EditText
+        android:id="@+id/searchUserEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:paddingVertical="6dp"
+        android:paddingHorizontal="5dp"
+        android:background="@drawable/account_input_bg"
+        android:hint="@string/barajKorisnici" />
+
+
+    <TextView
+        android:id="@+id/tipRezultati"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchUserEdit"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="Recommended"
+        />
+
+    <TextView
+        android:id="@+id/izbrisiBaranja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchUserEdit"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/orange_500"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:text="@string/izbrisiBaranja"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchList"
+        android:layout_below="@id/tipRezultati"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

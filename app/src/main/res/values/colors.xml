@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange_200">#FFF3693A</color>
+    <color name="orange_500">#FFF0503A</color>
+    <color name="orange_700">#FFD64732</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#393a41</color>
+    <color name="colorPrimaryDark">#1c223c</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorProfile">#1c223c</color>
+    <color name="inputBackground">#f0f0f0</color>
+    <color name="inputBackgroundDark">#edebeb</color>
+    <color name="colorLight">#bdc3c7</color>
+    <color name="facebookColor">#4064AD</color>
+    <color name="cardViewBackground">#fafafa</color>
+    <color name="zacuvajVidlivostBg">#ffffff</color>
+    <color name="whiteFixed">#ffffff</color>
+</resources>

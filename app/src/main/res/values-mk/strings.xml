@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Chatly</string>
+    <string name="action_settings">Профил</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Следно</string>
+    <string name="previous">Претходно</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="appbar_scrolling_view_behavior">NestedScrollView</string>
+    <string name="chats">Пораки</string>
+    <string name="search">Пребарувај</string>
+    <string name="settings">Подесувања</string>
+    <string name="account_settings">Профил</string>
+    <string name="logout">Одјави се</string>
+    <string name="barajKorisnici">Пребарувај...</string>
+    <string name="logirajSeProfil">Најави се </string>
+    <string name="emailadresa">Е-пошта</string>
+    <string name="password">Лозинка</string>
+    <string name="login">Најава</string>
+    <string name="porakaHint">Порака...</string>
+    <string name="naprajAkaunt">Направи профил</string>
+    <string name="korisnickoIme">Корисничко име</string>
+    <string name="fullname">Име и презиме</string>
+    <string name="signup">Регистрирај се</string>
+    <string name="kontaktirajFb">Контактирај ме на Facebook</string>
+    <string name="instagramFollow">Следи ме на Instagram</string>
+    <string name="websiteCheck">Види го мојот вебсајт</string>
+    <string name="ispratiPoraka">Испрати порака</string>
+    <string name="prodolziFb">&#xf09a;  Facebook</string>
+    <string name="prodolziGoogle">&#xf1a0; Google</string>
+    <string name="prodolziGostin">&#xf21b;  Продолжи како гостин</string>
+    <string name="zacuvaj">Зачувај</string>
+    <string name="vidlivost">Видливост:</string>
+    <string name="promeniFacebook">Промени Facebook</string>
+    <string name="promeniInstagram">Промени Instagram</string>
+    <string name="promeniWeb">Промени вебсајт</string>
+
+    <string name="google_client_id">680252325426-b1glflrut0057ers2sn9g5khhnt0b625.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">262288663022463</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">5c37178e39f57cf1903dd066c2d12b0d</string>
+    <string name="izbrisiPoraka">Избриши порака</string>
+    <string name="otkazi">Откажи</string>
+    <string name="shosakash">Одбери опција</string>
+    <string name="izbrisano">Избришано</string>
+    <string name="greskaProbaj">Грешка, обидете се повторно.</string>
+    <string name="nemaPoraka">Нема пораки</string>
+    <string name="vnesiLink">Внесете линк</string>
+    <string name="vnesiIme">Внесете име</string>
+    <string name="vnesiUsername">Внесете корисничко име</string>
+    <string name="korisnickourlzadolzitelno">Корисничкото име/Линкот е задолжително поле!</string>
+    <string name="zacuvano">Зачувано!</string>
+    <string name="prikacuva">Се прикачува...</string>
+    <string name="siteZadolzitelni">Сите полиња се задолжителни!</string>
+    <string name="emailNevaliden">Вашата Е-пошта не е валидна!</string>
+    <string name="procitano">Видено</string>
+    <string name="isprateno">Пратено</string>
+    <string name="preporacani">Препорачано</string>
+    <string name="prabarani">Пребарувања</string>
+    <string name="rezultati">Резултати</string>
+    <string name="nemarezultat">Нема резултати</string>
+    <string name="izbrisiBaranja">Исчисти</string>
+    <string name="vekjepostoiUser">Корисничкото име веќе е зафатено</string>
+    <string name="potvrdiAkaunt">Потврдете го Вашиот профил</string>
+    <string name="emailKod">Верификациски код</string>
+    <string name="submit">Внеси</string>
+    <string name="failVerification">Грешка при валидација</string>
+    <string name="skenirajQr">Скенирај QR код</string>
+    <string name="spodeliProfil">Сподели профил</string>
+    <string-array name="pol_array">
+        <item>Машко</item>
+        <item>Женско</item>
+    </string-array>
+
+    <string name="icon_heart">&#xf004;</string>
+
+
+    <string-array name="dostapnost_array">
+        <item>Јавно</item>
+        <item>Само верифицирани корисници</item>
+        <item>Приватен</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="promeniJazikMk">Switch to Macedonian</string>
+    <string name="promeniJazikEn">Switch to English</string>
+</resources>

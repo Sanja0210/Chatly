@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "680252325426",
+    "firebase_url": "https://chatly-f63cf-default-rtdb.firebaseio.com",
+    "project_id": "chatly-f63cf",
+    "storage_bucket": "chatly-f63cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680252325426:android:15f7fa653bb3b7e908062b",
+        "android_client_info": {
+          "package_name": "com.fikt.chatly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680252325426-105riucmcusbdk68dq187ersdu37n1d1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fikt.chatly",
+            "certificate_hash": "4da3b946cda513ac17ac32b073e7700b19c9c902"
+          }
+        },
+        {
+          "client_id": "680252325426-b1glflrut0057ers2sn9g5khhnt0b625.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANPHC1Q85etaX__LiafJ5PCJ2pvB597sE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680252325426-4ta4l38tdgqgcdhjs0ivbo44j6d94arf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

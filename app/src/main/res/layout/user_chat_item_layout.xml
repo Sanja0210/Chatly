@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_chat"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_profile" />
+
+    <TextView
+        android:id="@+id/username_text_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/profile_image_chat"
+        android:text="dim"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_online"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:civ_border_width="12dp"
+        app:civ_border_color="#05df29"
+        android:src="@drawable/profile"
+        android:layout_below="@id/username_text_chat"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/profile_image_chat"
+        android:visibility="gone"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_offline"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:civ_border_width="12dp"
+        app:civ_border_color="#bfbfbf"
+        android:src="@drawable/profile"
+        android:layout_below="@id/username_text_chat"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/profile_image_chat"
+        />
+    <TextView
+        android:id="@+id/message_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/profile_image_chat"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:text="dim dim dim"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/username_text_chat"
+        />
+
+    <TextView
+        android:id="@+id/message_last_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="14dp"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:text="4h ago"
+        android:textColor="@color/colorLight"
+        />
+
+    <TextView
+        android:id="@+id/unread_messages_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:text="1 new"
+        android:textColor="@color/orange_500"
+        android:textStyle="bold"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MessageChatFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barLayout_conv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Chatly.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_chatlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:theme="@style/Theme.Chatly.PopupOverlay">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilna_conv"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/profile">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/korisnicko_conv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="26dp"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:backgroundTint="@color/white"
+        android:indeterminateTint="#1a09d6"
+        android:layout_marginTop="-7dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/poraki_lista_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/novaporaka_celina_conv"
+        android:layout_below="@+id/barLayout_conv"
+        android:background="@color/white" />
+
+
+    <RelativeLayout
+        android:id="@+id/novaporaka_celina_conv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_send_message_bg"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="3dp"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:id="@+id/prikaci_fajl_conv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/attachments"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <ImageView
+            android:id="@+id/slikaj_conv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/camera"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/prikaci_fajl_conv"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <EditText
+            android:id="@+id/novaporaka_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="10"
+            android:background="@color/inputBackground"
+            android:hint="@string/porakaHint"
+            android:layout_toRightOf="@+id/slikaj_conv"
+            android:layout_toLeftOf="@+id/isprati_poraka_button"
+            android:minHeight="10dp"
+            android:text=""
+            android:padding="6dp"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/isprati_poraka_button"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@drawable/send"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginHorizontal="6dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

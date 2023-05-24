@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Chatly</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="appbar_scrolling_view_behavior">NestedScrollView</string>
+    <string name="chats">Chats</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+    <string name="account_settings">Profile</string>
+    <string name="logout">Logout</string>
+
+    <string name="logirajSeProfil">Login to your account</string>
+    <string name="emailadresa">E-mail address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="porakaHint">Message...</string>
+    <string name="naprajAkaunt">Create your account</string>
+    <string name="korisnickoIme">Username</string>
+    <string name="fullname">Fullname</string>
+    <string name="signup">Sign up</string>
+    <string name="kontaktirajFb">Contact me on Facebook</string>
+    <string name="instagramFollow">Follow me on Instagram</string>
+    <string name="websiteCheck">Check out my website</string>
+    <string name="ispratiPoraka">Send Message</string>
+    <string name="prodolziFb">&#xf09a;  Facebook</string>
+    <string name="prodolziGoogle">&#xf1a0; Google</string>
+    <string name="prodolziGostin">&#xf21b; Continue as Guest</string>
+    <string name="zacuvaj">Save</string>
+    <string name="vidlivost">Visibility:</string>
+    <string name="promeniFacebook">Change Facebook username</string>
+    <string name="promeniInstagram">Change Instagram username</string>
+    <string name="promeniWeb">Change website url</string>p
+
+    <string name="google_client_id">680252325426-b1glflrut0057ers2sn9g5khhnt0b625.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">262288663022463</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">5c37178e39f57cf1903dd066c2d12b0d</string>
+    <string name="izbrisiPoraka">Delete Message</string>
+    <string name="otkazi">Cancel</string>
+    <string name="shosakash">What do you want?</string>
+    <string name="izbrisano">Deleted</string>
+    <string name="greskaProbaj">Failed, please try again.</string>
+    <string name="nemaPoraka">No Message</string>
+    <string name="vnesiLink">Enter your link</string>
+    <string name="vnesiIme">Enter your name</string>
+    <string name="vnesiUsername">Enter your username</string>
+    <string name="korisnickourlzadolzitelno">Username/URL is required!</string>
+    <string name="zacuvano">Saved!</string>
+    <string name="prikacuva">Uploading...</string>
+    <string name="siteZadolzitelni">All fields are required!</string>
+    <string name="emailNevaliden">Your Email address is not valid!</string>
+    <string name="procitano">Seen</string>
+    <string name="isprateno">Sent</string>
+    <string name="preporacani">Recommended</string>
+    <string name="prabarani">Recent searches</string>
+    <string name="rezultati">Results</string>
+    <string name="nemarezultat">No results</string>
+    <string name="izbrisiBaranja">Clear</string>
+    <string name="vekjepostoiUser">A user with this username already exists</string>
+    <string name="potvrdiAkaunt">Confirm your account</string>
+    <string name="emailKod">E-mail code</string>
+    <string name="submit">Submit</string>
+    <string name="failVerification">Verification Failed</string>
+    <string name="skenirajQr">Scan QR Code</string>
+    <string name="spodeliProfil">Share your profile</string>
+    <string name="barajKorisnici">Search users...</string>
+
+    <string-array name="pol_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="dostapnost_array">
+        <item>Public</item>
+        <item>Verified users only</item>
+        <item>Private</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="promeniJazikMk">Switch to Macedonian</string>
+    <string name="promeniJazikEn">Switch to English</string>
+    <string name="icon_heart">&#xf004;</string>
+</resources>

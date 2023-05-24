@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".Fragments.SettingsFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:backgroundTint="@color/white"
+        android:indeterminateTint="#1a09d6"
+        android:layout_marginTop="-7dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardViewBackground"
+        android:backgroundTint="@color/cardViewBackground"
+        android:layout_marginTop="10dp"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/naslovna_slika"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/cover"
+                android:scaleType="centerCrop"
+            />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilna_slika"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="140dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile"
+
+                />
+
+            <TextView
+                android:id="@+id/fullnameProfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:layout_below="@id/profilna_slika"
+                android:layout_centerHorizontal="true"
+                android:textSize="28sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:id="@+id/korisnickoImeProfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:layout_below="@id/fullnameProfil"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/generirajQr"
+                android:layout_width="22dp"
+                android:layout_toRightOf="@id/fullnameProfil"
+                android:layout_below="@id/profilna_slika"
+                android:layout_marginTop="20dp"
+                android:layout_height="22dp"
+                android:src="@drawable/qr"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/zacuvajDostapnost"
+                android:layout_below="@+id/cardView1"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_width="120dp"
+                android:textAlignment="textEnd"
+                android:layout_height="20dp"
+                android:shadowColor="@color/white"
+                android:background="@color/zacuvajVidlivostBg"
+                android:textColor="@color/orange_700"
+                android:text="@string/zacuvaj"
+                style="?android:attr/borderlessButtonStyle"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/dostapenProfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardView1"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/vidlivost"
+                    android:textSize="12sp" />
+
+
+                <Spinner
+                    android:id="@+id/dostapnost_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_bg"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+
+            <LinearLayout
+        android:id="@+id/facebookLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dostapenProfil"
+        android:gravity="center"
+          android:background="@drawable/account_input_bg"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:padding="12dp">
+        <ImageView
+            android:id="@+id/namesti_fb"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/facebook"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/promeniFacebook" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/instagramLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facebookLinear"
+        android:gravity="center"
+        android:background="@drawable/account_input_bg"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/namesti_insta"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/instagram"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/promeniInstagram" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/webLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instagramLinear"
+        android:gravity="center"
+          android:background="@drawable/account_input_bg"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:padding="12dp">
+        <ImageView
+            android:id="@+id/namesti_web"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/web"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/promeniWeb" />
+    </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

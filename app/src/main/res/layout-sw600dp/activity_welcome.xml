@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    tools:context=".WelcomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:weightSum="1"
+        >
+        <ImageView
+            android:id="@+id/welcomeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="0.5"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/ic_launcher_round" />
+
+    <RelativeLayout
+        android:id="@+id/buttonsRelative"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:paddingHorizontal="30dp"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/orange_500"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login_x"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/gostin_bg_btn"
+                android:text="@string/prodolziGostin"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login_welcome_btn"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_x"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_radius_bg"
+                android:text="@string/login"
+                android:textColor="@color/whiteFixed"
+                android:textColorHint="@color/whiteFixed" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebookLoginBtn"
+            android:layout_width="400dp"
+            android:layout_height="2dp"
+            android:paddingTop="15dp"
+            android:layout_below="@id/login_x"
+            android:layout_marginTop="60dp"
+
+            android:paddingBottom="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:visibility="gone"
+/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/facebookLogin"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/register_welcome_btn"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/facebook_bg_btn"
+            android:text="@string/prodolziFb"
+            android:textColor="@color/whiteFixed"
+            android:textColorHint="@color/whiteFixed" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/googleSignIn"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/facebookLogin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/google_button_bg"
+            android:gravity="center"
+            android:paddingVertical="5dp"
+            android:src="@drawable/google"
+            android:text="@string/prodolziGoogle"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/register_welcome_btn"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_welcome_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/register_btn_bg"
+            android:text="@string/signup"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

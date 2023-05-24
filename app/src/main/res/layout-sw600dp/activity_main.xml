@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Chatly.AppBarOverlay">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_profile"
+            android:tint="@color/black"
+            >
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/username_text" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_marginLeft="26dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            >
+
+        <ImageView
+            android:id="@+id/promeniHome"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/home"
+            android:visibility="gone"
+            />
+
+
+            <ImageView
+                android:id="@+id/promeniHomeAktivno"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                app:tint="@color/orange_500"
+                android:src="@drawable/home"
+                />
+
+        <ImageView
+            android:id="@+id/promeniSearch"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/search"
+            android:layout_marginLeft="20dp" />
+
+            <ImageView
+                android:id="@+id/promeniSearchAktivno"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/search"
+                app:tint="@color/orange_500"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/promeniProfil"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/profile_nav"
+            android:layout_marginLeft="20dp"
+            />
+
+            <ImageView
+                android:id="@+id/promeniProfilAktivno"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/profile_nav"
+                app:tint="@color/orange_500"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/linearTablet"
+        android:layout_below="@id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/chats_fragment_tablet"
+            android:layout_width="300dp"
+            android:outlineAmbientShadowColor="@color/orange_500"
+            android:layout_height="match_parent"
+            android:name="com.fikt.chatly.Fragments.ChatsFragment" />
+
+        <!-- The second child becomes the right (content) pane. In this
+             example, android:layout_weight is used to expand this detail pane
+             to consume leftover available space when the
+             the entire window is wide enough to fit both the left and right pane.-->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/detail_container"
+            android:layout_width="300dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:name="com.fikt.chatly.Fragments.MessageChatFragment" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/search_fragment_tablet"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:name="com.fikt.chatly.Fragments.SearchFragment"
+            android:visibility="gone"
+            />
+
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/settings_fragment_taablet"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:name="com.fikt.chatly.Fragments.SettingsFragment"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    <!-- The first child view becomes the left pane. When the combined
+         desired width (expressed using android:layout_width) would
+         not fit on-screen at once, the right pane is permitted to
+         overlap the left. -->
+
+</RelativeLayout>

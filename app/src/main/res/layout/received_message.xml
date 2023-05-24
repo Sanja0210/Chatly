@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilnaKorisnik"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/profile"
+            />
+
+        <TextView
+            android:id="@+id/tekstPoraka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/profilnaKorisnik"
+            android:background="@drawable/input_send_message_bg"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="8dp"
+            android:text="Hello friend! das jdnaskj dnasjkdjksand jksankjdnasjk dnasjk ndjkasndkjsanjkdanskjdkjsadn asjkndkjnsajkdnasjknjksn"
+            android:maxWidth="300dp"
+            android:textColor="@color/black"
+            android:lineHeight="23dp"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/seen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tekstPoraka"
+            android:text="seen"
+            android:visibility="gone"
+            >
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>
