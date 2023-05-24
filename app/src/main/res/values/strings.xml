@@ -79,12 +79,11 @@
 
     <string-array name="dostapnost_array">
         <item>Public</item>
-        <item>Verified users only</item>
         <item>Private</item>
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="promeniJazikMk">Switch to Macedonian</string>
-    <string name="promeniJazikEn">Switch to English</string>
+    <string name="promeniJazikMk">Switch language - Macedonian</string>
+    <string name="promeniJazikEn">Switch language - English</string>
     <string name="icon_heart">&#xf004;</string>
 </resources>

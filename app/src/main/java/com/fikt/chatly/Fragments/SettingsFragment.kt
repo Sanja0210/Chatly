@@ -35,7 +35,6 @@ class SettingsFragment : Fragment() {
     private var storageReference : StorageReference? = null
     private var daliECover : String = ""
     private var mrezaZaIzmenvanje : String = ""
-    private var smenatoDostapnost = false
     private var nacrtanoDostapnost = false
 
     //ui komponenti

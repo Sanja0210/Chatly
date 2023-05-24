@@ -81,11 +81,10 @@
 
     <string-array name="dostapnost_array">
         <item>Јавно</item>
-        <item>Само верифицирани корисници</item>
         <item>Приватен</item>
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="promeniJazikMk">Switch to Macedonian</string>
-    <string name="promeniJazikEn">Switch to English</string>
+    <string name="promeniJazikMk">Промени јазик - Македонски</string>
+    <string name="promeniJazikEn">Промени јазик - Англиски</string>
 </resources>
