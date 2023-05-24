@@ -9,9 +9,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b9df190-cd1e-41c4-88a6-e1762c053156" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_welcome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_welcome.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml" afterDir="false" />
+    <list default="true" id="7b9df190-cd1e-41c4-88a6-e1762c053156" name="Changes" comment="Измена на изглед во login форма">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fikt/chatly/Fragments/SettingsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fikt/chatly/Fragments/SettingsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +117,14 @@
       <option name="presentableId" value="Default" />
       <updated>1684965374283</updated>
     </task>
+    <task id="LOCAL-00001" summary="Измена на изглед во login форма">
+      <created>1684967420404</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684967420404</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,5 +142,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="Измена на изглед во login форма" />
+    <option name="LAST_COMMIT_MESSAGE" value="Измена на изглед во login форма" />
   </component>
 </project>

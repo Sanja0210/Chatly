@@ -43,7 +43,6 @@ class SettingsFragment : Fragment() {
     private lateinit var korisnickoImeProfil : TextView
     private lateinit var fullnameProfil : TextView
     private lateinit var naslovnaSlikaProfil : ImageView
-    private lateinit var generirajQr : ImageView
     private lateinit var facebookProfil : LinearLayout
     private lateinit var instaProfil : LinearLayout
     private lateinit var websiteProfil : LinearLayout
@@ -68,7 +67,6 @@ class SettingsFragment : Fragment() {
         progressBar = view.findViewById(R.id.progressbar)
         dostapnostSpinner = view.findViewById(R.id.dostapnost_spinner)
         zacuvajDostapnostBtn = view.findViewById(R.id.zacuvajDostapnost)
-        generirajQr = view.findViewById(R.id.generirajQr)
 
         progressBar.visibility = View.INVISIBLE
 
@@ -92,11 +90,6 @@ class SettingsFragment : Fragment() {
 
         zacuvajDostapnostBtn.setOnClickListener {
             zacuvajDostapnost(dostapnostSpinner.selectedItemPosition)
-        }
-
-        generirajQr.setOnClickListener {
-                val link = "https://google.com/" + najavenKorisnik!!.uid.toString()
-            openDialog(link)
         }
 
         korisniciReference!!.addValueEventListener(object : ValueEventListener {

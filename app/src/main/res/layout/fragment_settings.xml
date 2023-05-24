@@ -80,18 +80,6 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
                 />
-
-            <ImageView
-                android:id="@+id/generirajQr"
-                android:layout_width="22dp"
-                android:layout_toRightOf="@id/fullnameProfil"
-                android:layout_below="@id/profilna_slika"
-                android:layout_marginTop="20dp"
-                android:layout_height="22dp"
-                android:src="@drawable/qr"
-                android:layout_marginLeft="10dp"
-                android:background="@color/white"
-                />
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
