@@ -24,23 +24,9 @@
         android:layout_alignParentBottom="true">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/login_x"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:textStyle="bold"
-            android:background="@drawable/gostin_bg_btn"
-            android:text="@string/prodolziGostin"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black" />
-
-        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/login_welcome_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/login_x"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
@@ -48,6 +34,20 @@
             android:text="@string/login"
             android:textColor="@color/whiteFixed"
             android:textColorHint="@color/whiteFixed" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_below="@id/login_welcome_btn"
+            android:background="@drawable/gostin_bg_btn"
+            android:text="@string/prodolziGostin"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <com.facebook.login.widget.LoginButton
             android:id="@+id/facebookLoginBtn"
@@ -64,7 +64,7 @@
             android:id="@+id/register_welcome_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/login_welcome_btn"
+            android:layout_below="@id/login_x"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"

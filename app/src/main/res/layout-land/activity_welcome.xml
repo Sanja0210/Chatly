@@ -57,22 +57,9 @@
         </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/login_x"
-                android:layout_width="400dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="60dp"
-                android:background="@drawable/gostin_bg_btn"
-                android:text="@string/prodolziGostin"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black" />
-
-            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/login_welcome_btn"
-                android:layout_width="400dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/login_x"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
@@ -82,10 +69,35 @@
                 android:textColorHint="@color/whiteFixed" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/register_welcome_btn"
-                android:layout_width="400dp"
+                android:id="@+id/login_x"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
                 android:layout_below="@id/login_welcome_btn"
+                android:background="@drawable/gostin_bg_btn"
+                android:text="@string/prodolziGostin"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/facebookLoginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="10dp"
+                android:visibility="gone"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/register_welcome_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_x"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
@@ -93,20 +105,6 @@
                 android:text="@string/signup"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black" />
-
-        <com.facebook.login.widget.LoginButton
-            android:id="@+id/facebookLoginBtn"
-            android:layout_width="400dp"
-            android:layout_height="2dp"
-            android:paddingTop="15dp"
-            android:layout_below="@id/register_welcome_btn"
-            android:layout_marginTop="60dp"
-
-            android:paddingBottom="15dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginHorizontal="10dp"
-            android:visibility="gone"
-/>
 
             <LinearLayout
                 android:id="@+id/facebookGoogleButtons"
