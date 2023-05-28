@@ -17,7 +17,7 @@
         android:layout_centerInParent="true"
         android:layout_marginLeft="12dp"
         android:layout_toRightOf="@id/profile_image_chat"
-        android:text="dim"
+        android:text="Username"
         android:textColor="@color/black"
         android:textSize="19sp"
         android:textStyle="bold" />
@@ -57,7 +57,7 @@
         android:layout_marginLeft="12dp"
         android:textSize="14sp"
         android:maxLines="1"
-        android:text="dim dim dim"
+        android:text="Message"
         android:textColor="@color/colorPrimary"
         android:layout_below="@id/username_text_chat"
         />

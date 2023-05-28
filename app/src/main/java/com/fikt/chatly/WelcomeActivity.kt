@@ -210,7 +210,7 @@ class WelcomeActivity : AppCompatActivity() {
             userHashMap["website"] = "https://google.com"
             userHashMap["fullname"] = "u" + momTimestamp
             userHashMap["gender"] = "Male"
-            userHashMap["dostapnost"] = 2
+            userHashMap["dostapnost"] = 1
             userHashMap["gostin"] = 1
             userHashMap["kodPotvrda"] = ""
 
